@@ -1,0 +1,28 @@
+/*!40101 SET NAMES binary*/;
+CREATE TABLE `x$schema_table_statistics_with_buffer`(
+`table_schema` int,
+`table_name` int,
+`rows_fetched` int,
+`fetch_latency` int,
+`rows_inserted` int,
+`insert_latency` int,
+`rows_updated` int,
+`update_latency` int,
+`rows_deleted` int,
+`delete_latency` int,
+`io_read_requests` int,
+`io_read` int,
+`io_read_latency` int,
+`io_write_requests` int,
+`io_write` int,
+`io_write_latency` int,
+`io_misc_requests` int,
+`io_misc_latency` int,
+`innodb_buffer_allocated` int,
+`innodb_buffer_data` int,
+`innodb_buffer_free` int,
+`innodb_buffer_pages` int,
+`innodb_buffer_pages_hashed` int,
+`innodb_buffer_pages_old` int,
+`innodb_buffer_rows_cached` int
+)ENGINE=MyISAM;

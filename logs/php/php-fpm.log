@@ -1,0 +1,20 @@
+[23-Sep-2018 03:13:05] NOTICE: fpm is running, pid 16
+[23-Sep-2018 03:13:05] NOTICE: ready to handle connections
+[23-Sep-2018 03:37:44] WARNING: [pool www] child 29 exited on signal 11 (SIGSEGV) after 1478.539567 seconds from start
+[23-Sep-2018 03:37:44] NOTICE: [pool www] child 1591 started
+[23-Sep-2018 03:38:42] WARNING: [pool www] child 1591 exited on signal 11 (SIGSEGV) after 58.386317 seconds from start
+[23-Sep-2018 03:38:42] NOTICE: [pool www] child 1640 started
+[23-Sep-2018 05:56:03] NOTICE: Terminating ...
+[23-Sep-2018 05:56:03] NOTICE: exiting, bye-bye!
+[23-Sep-2018 05:56:38] NOTICE: fpm is running, pid 81
+[23-Sep-2018 05:56:38] NOTICE: ready to handle connections
+[23-Sep-2018 06:07:15] NOTICE: Terminating ...
+[23-Sep-2018 06:07:15] NOTICE: exiting, bye-bye!
+[23-Sep-2018 16:52:11] NOTICE: fpm is running, pid 50
+[23-Sep-2018 16:52:12] NOTICE: ready to handle connections
+[24-Sep-2018 10:02:31] NOTICE: Terminating ...
+[24-Sep-2018 10:02:31] NOTICE: exiting, bye-bye!
+[01-Oct-2018 23:47:14] NOTICE: fpm is running, pid 52
+[01-Oct-2018 23:47:14] NOTICE: ready to handle connections
+[02-Oct-2018 02:21:13] NOTICE: Terminating ...
+[02-Oct-2018 02:21:13] NOTICE: exiting, bye-bye!
