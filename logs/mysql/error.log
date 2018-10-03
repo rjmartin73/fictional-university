@@ -465,3 +465,50 @@ InnoDB: Progress in percent: 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 
 Version: '5.7.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
 2018-10-03T01:07:21.105407Z 5 [ERROR] /usr/sbin/mysqld: Table './mysql/proc' is marked as crashed and should be repaired
 2018-10-03T01:07:21.106142Z 5 [Warning] Checking table:   './mysql/proc'
+2018-10-03T01:21:33.574005Z 0 [Note] Giving 1 client threads a chance to die gracefully
+2018-10-03T01:21:33.575053Z 0 [Note] Shutting down slave threads
+2018-10-03T01:21:33.575764Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2018-10-03T01:21:33.576757Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-03T01:21:33.577772Z 0 [Note] Binlog end
+2018-10-03T01:21:33.838769Z 0 [Note] Shutting down plugin 'ngram'
+2018-10-03T01:21:33.840335Z 0 [Note] Shutting down plugin 'partition'
+2018-10-03T01:21:33.841294Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2018-10-03T01:21:33.933782Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2018-10-03T01:21:33.934511Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2018-10-03T01:21:33.934691Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2018-10-03T01:21:33.934791Z 0 [Note] Shutting down plugin 'MyISAM'
+2018-10-03T01:21:33.934952Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2018-10-03T01:21:33.935043Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2018-10-03T01:21:33.935106Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2018-10-03T01:21:33.935171Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2018-10-03T01:21:33.935235Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2018-10-03T01:21:33.935300Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2018-10-03T01:21:33.935359Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2018-10-03T01:21:33.935423Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2018-10-03T01:21:33.935486Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2018-10-03T01:21:33.935547Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2018-10-03T01:21:33.935613Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2018-10-03T01:21:33.935672Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2018-10-03T01:21:33.935745Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2018-10-03T01:21:33.935805Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2018-10-03T01:21:33.935868Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2018-10-03T01:21:33.935937Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2018-10-03T01:21:33.936001Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2018-10-03T01:21:33.936056Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2018-10-03T01:21:33.936111Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2018-10-03T01:21:33.936167Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2018-10-03T01:21:33.936221Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2018-10-03T01:21:33.936276Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2018-10-03T01:21:33.936331Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2018-10-03T01:21:33.936385Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2018-10-03T01:21:33.936440Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2018-10-03T01:21:33.936503Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2018-10-03T01:21:33.936558Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2018-10-03T01:21:33.936613Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2018-10-03T01:21:33.936667Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2018-10-03T01:21:33.936722Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2018-10-03T01:21:33.936776Z 0 [Note] Shutting down plugin 'InnoDB'
+2018-10-03T01:21:33.937099Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-03T01:21:33.937361Z 0 [Note] InnoDB: Starting shutdown...
+2018-10-03T01:21:34.038994Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2018-10-03T01:21:34.039653Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 181003  1:21:34
