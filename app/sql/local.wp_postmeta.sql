@@ -3,4 +3,5 @@
 /*!40103 SET TIME_ZONE='+00:00' */;
 INSERT INTO `wp_postmeta` VALUES
 (1,2,"_wp_page_template","default"),
-(2,3,"_wp_page_template","default");
+(2,3,"_wp_page_template","default"),
+(3,2,"_edit_lock","1538491572:1");
