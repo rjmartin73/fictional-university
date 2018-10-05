@@ -1,0 +1,13 @@
+/*!40101 SET NAMES binary*/;
+DROP TABLE IF EXISTS `schema_unused_indexes`;
+DROP VIEW IF EXISTS `schema_unused_indexes`;
+SET @PREV_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT;
+SET @PREV_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS;
+SET @PREV_COLLATION_CONNECTION=@@COLLATION_CONNECTION;
+SET character_set_client = utf8;
+SET character_set_results = utf8;
+SET collation_connection = utf8_general_ci;
+CREATE ALGORITHM=MERGE DEFINER=`mysql.sys`@`localhost` SQL SECURITY INVOKER VIEW `schema_unused_indexes` AS select `performance_schema`.`table_io_waits_summary_by_index_usage`.`OBJECT_SCHEMA` AS `object_schema`,`performance_schema`.`table_io_waits_summary_by_index_usage`.`OBJECT_NAME` AS `object_name`,`performance_schema`.`table_io_waits_summary_by_index_usage`.`INDEX_NAME` AS `index_name` from `performance_schema`.`table_io_waits_summary_by_index_usage` where ((`performance_schema`.`table_io_waits_summary_by_index_usage`.`INDEX_NAME` is not null) and (`performance_schema`.`table_io_waits_summary_by_index_usage`.`COUNT_STAR` = 0) and (`performance_schema`.`table_io_waits_summary_by_index_usage`.`OBJECT_SCHEMA` <> 'mysql') and (`performance_schema`.`table_io_waits_summary_by_index_usage`.`INDEX_NAME` <> 'PRIMARY')) order by `performance_schema`.`table_io_waits_summary_by_index_usage`.`OBJECT_SCHEMA`,`performance_schema`.`table_io_waits_summary_by_index_usage`.`OBJECT_NAME`;
+SET character_set_client = @PREV_CHARACTER_SET_CLIENT;
+SET character_set_results = @PREV_CHARACTER_SET_RESULTS;
+SET collation_connection = @PREV_COLLATION_CONNECTION;
