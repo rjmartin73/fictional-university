@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <?php wp_head(); ?>
+      <?php wp_head();
+      //wp_admin_bar_sidebar_toggle($wp_admin_bar); ?>
 </head>
 <body>
 <header class="site-header">

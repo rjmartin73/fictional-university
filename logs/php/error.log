@@ -6073,3 +6073,36 @@ Stack trace:
 #3 /app/public/index.php(17): require('/app/public/wp-...')
 #4 {main}
   thrown in /app/public/wp-includes/post.php on line 6205
+[08-Oct-2018 03:02:10 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_admin_bar_sidebar_toggle(), 0 passed in /app/public/wp-content/themes/fictional-university/header.php on line 5 and exactly 1 expected in /app/public/wp-includes/admin-bar.php:183
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university/header.php(5): wp_admin_bar_sidebar_toggle()
+#1 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true)
+#3 /app/public/wp-includes/general-template.php(41): locate_template(Array, true)
+#4 /app/public/wp-content/themes/fictional-university/index.php(3): get_header()
+#5 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/admin-bar.php on line 183
+[08-Oct-2018 03:26:27 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/fictional-university/page.php:34
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/page.php on line 34
+[08-Oct-2018 03:27:18 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/fictional-university/page.php:34
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/page.php on line 34
+[08-Oct-2018 03:27:26 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/fictional-university/page.php:34
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/page.php on line 34
