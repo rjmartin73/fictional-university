@@ -1,0 +1,13 @@
+/*!40101 SET NAMES binary*/;
+DROP TABLE IF EXISTS `x$latest_file_io`;
+DROP VIEW IF EXISTS `x$latest_file_io`;
+SET @PREV_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT;
+SET @PREV_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS;
+SET @PREV_COLLATION_CONNECTION=@@COLLATION_CONNECTION;
+SET character_set_client = utf8;
+SET character_set_results = utf8;
+SET collation_connection = utf8_general_ci;
+CREATE ALGORITHM=MERGE DEFINER=`mysql.sys`@`localhost` SQL SECURITY INVOKER VIEW `x$latest_file_io` AS select if(isnull(`information_schema`.`processlist`.`ID`),concat(substring_index(`performance_schema`.`threads`.`NAME`,'/',-(1)),':',`performance_schema`.`events_waits_history_long`.`THREAD_ID`),concat(`information_schema`.`processlist`.`USER`,'@',`information_schema`.`processlist`.`HOST`,':',`information_schema`.`processlist`.`ID`)) AS `thread`,`performance_schema`.`events_waits_history_long`.`OBJECT_NAME` AS `file`,`performance_schema`.`events_waits_history_long`.`TIMER_WAIT` AS `latency`,`performance_schema`.`events_waits_history_long`.`OPERATION` AS `operation`,`performance_schema`.`events_waits_history_long`.`NUMBER_OF_BYTES` AS `requested` from ((`performance_schema`.`events_waits_history_long` join `performance_schema`.`threads` on((`performance_schema`.`events_waits_history_long`.`THREAD_ID` = `performance_schema`.`threads`.`THREAD_ID`))) left join `information_schema`.`processlist` on((`performance_schema`.`threads`.`PROCESSLIST_ID` = `information_schema`.`processlist`.`ID`))) where ((`performance_schema`.`events_waits_history_long`.`OBJECT_NAME` is not null) and (`performance_schema`.`events_waits_history_long`.`EVENT_NAME` like 'wait/io/file/%')) order by `performance_schema`.`events_waits_history_long`.`TIMER_START`;
+SET character_set_client = @PREV_CHARACTER_SET_CLIENT;
+SET character_set_results = @PREV_CHARACTER_SET_RESULTS;
+SET collation_connection = @PREV_COLLATION_CONNECTION;
