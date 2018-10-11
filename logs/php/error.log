@@ -6106,3 +6106,24 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/fictional-university/page.php on line 34
+[11-Oct-2018 01:07:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_parent() in /app/public/wp-content/themes/fictional-university/single.php:20
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/single.php on line 20
+[11-Oct-2018 01:07:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_parent() in /app/public/wp-content/themes/fictional-university/single.php:20
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/single.php on line 20
+[11-Oct-2018 01:07:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sit_url() in /app/public/wp-content/themes/fictional-university/single.php:20
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university/single.php on line 20
