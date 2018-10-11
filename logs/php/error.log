@@ -6129,3 +6129,4 @@ Stack trace:
   thrown in /app/public/wp-content/themes/fictional-university/single.php on line 20
 [11-Oct-2018 01:33:34 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-content/themes/fictional-university/archive.php on line 14
 [11-Oct-2018 01:33:34 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-content/themes/fictional-university/archive.php on line 14
+[11-Oct-2018 02:04:09 UTC] PHP Recoverable fatal error:  Object of class WP_Query could not be converted to string in /app/public/wp-content/themes/fictional-university/front-page.php on line 55
