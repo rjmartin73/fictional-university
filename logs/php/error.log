@@ -6127,3 +6127,5 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/fictional-university/single.php on line 20
+[11-Oct-2018 01:33:34 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-content/themes/fictional-university/archive.php on line 14
+[11-Oct-2018 01:33:34 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-content/themes/fictional-university/archive.php on line 14
